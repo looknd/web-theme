@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>主题切换示例</title>
+  <link rel="stylesheet/less" href="index.less">
+  <script src="https://cdn.jsdelivr.net/npm/less@4" ></script>  
+  <style>
+    html,body{
+      color:var(--color);
+      background-color: var(--background-color);
+    }
+    
+  </style>
+</head>
+<body>
+  <div id="app">
+    <h3>主题切换示例</h3>
+    <div>
+      <button onclick="setScheme('light')">白色</button>
+      <button onclick="setScheme('dark')">黑色</button>
+      <button onclick="alertTheme()">查看当前主题</button>
+    </div>
+    <ul>
+      <li>1+1</li>
+      <li>2+1</li>
+      <li>3+1</li>
+      <li>4+1</li>
+      <li>5+1</li>
+      <li>6+1</li>
+      <li>7+1</li>
+      <li>8+1</li>
+    </ul>
+  </div>
+  <script src="index.js"></script>
+</body>
+</html>

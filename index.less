@@ -1,0 +1,37 @@
+.light-variable{
+  --color:#333;
+  --background-color:rgb(240, 240, 240);
+}
+
+.dark-variable{
+  --color:#fff;
+  --background-color:#333;
+}
+
+:root{
+  .light-variable;
+}
+
+//方法一 有兼容问题
+// @media(prefers-color-scheme:dark){
+//   :root{
+//     .dark-variable;
+//   }
+// }
+
+// @media(prefers-color-scheme:light){
+//   :root{
+//     .light-variable;
+//   }
+// }
+
+
+// 方法二
+
+[user-color-scheme='dark']{
+  .dark-variable;
+}
+
+[user-color-scheme='light']{
+  .light-variable;
+}
